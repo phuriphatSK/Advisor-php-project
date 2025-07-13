@@ -1,5 +1,6 @@
 <?php
 session_start();
+session_reset();
 require_once(__DIR__ . "/../../../database/condb.php");
 
 if (!isset($_POST['username']) || !isset($_POST['password'])) {
