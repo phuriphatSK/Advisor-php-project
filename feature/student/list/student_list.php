@@ -23,13 +23,14 @@
 
     <div class="table-group">
         <?php
-        include('../../../database/condb.php');
+        require_once __DIR__ . '../../../database/condb.php';
 
         $query = "SELECT s.s_id, s.s_name, s.s_surname, s.s_gender, s.s_course, s.t_id, t.t_name ,t.t_surname
           FROM student s 
           JOIN teacher t ON s.t_id = t.t_id 
           ORDER BY s.s_id";
         $result = mysqli_query($con, $query);
+        $row = mysqli_fetch_array($result);
 
         if ($result) {
             echo '<table class="table table-bordered table-striped">';
@@ -43,7 +44,7 @@
                 <th width='15%'>อาจารย์ที่ปรึกษา</th>
             </tr>";
 
-            while ($row = mysqli_fetch_array($result)) {
+            while ($row) {
                 echo "<tr>";
                 echo "<td>" . $row["s_id"] . "</td>";
                 echo "<td>" . $row["s_name"] . "</td>";

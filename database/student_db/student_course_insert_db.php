@@ -11,13 +11,13 @@ $sqlID = "SELECT c_id FROM course WHERE c_id = '$id'" or die("Error:" . mysqli_e
 $cID = mysqli_query($con, $sqlID);
 
 if (mysqli_num_rows($cID) > 0) {
-    $sql = "INSERT INTO record (s_id,c_id,r_year,r_grade) VALUES ('$username','$id','$year','$grade')" or die("Error:" . mysqli_error($con));
+    $sql = "INSERT INTO record (s_username,c_id,r_year,r_grade) VALUES ('$username','$id','$year','$grade')" or die("Error:" . mysqli_error($con));
     $result = mysqli_query($con, $sql);
 } else {
     $sql1 = "INSERT INTO course (c_id,c_name) VALUES ('$id','$name')" or die("Error:" . mysqli_error($con));
     $result1 = mysqli_query($con, $sql1);
 
-    $sql2 = "INSERT INTO record (s_id,c_id,r_year,r_grade) VALUES ('$username','$id','$year','$grade')" or die("Error:" . mysqli_error($con));
+    $sql2 = "INSERT INTO record (s_username,c_id,r_year,r_grade) VALUES ('$username','$id','$year','$grade')" or die("Error:" . mysqli_error($con));
     $result2 = mysqli_query($con, $sql2);
 };
 mysqli_close($con);

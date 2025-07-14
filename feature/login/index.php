@@ -50,13 +50,28 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        color: white;
     }
 
     .navbar h3 {
         margin: 0;
+    }
+
+    .navbar button {
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 8px 15px;
+    }
+
+    .navbar button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar a {
         color: white;
-        text-align: left;
+        text-decoration: none;
+        margin: 0;
     }
 
     input[type="submit"] {
@@ -75,6 +90,7 @@
     <nav>
         <div class="navbar">
             <h3>ระบบอาจารย์ที่ปรึกษา</h3>
+            <button><a href="/advisor-g5/feature/register/index.php">ลงทะเบียน</a></button>
         </div>
     </nav>
     <br>

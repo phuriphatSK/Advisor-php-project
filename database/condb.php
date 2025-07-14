@@ -1,5 +1,10 @@
 <?php
-$con = mysqli_connect("localhost", "root", "", "advisor-g5", 3307);
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "advisor-g5";
+
+$con = mysqli_connect($host, $username, $password, $database, 3307);
 
 if (mysqli_connect_errno()) {
     die("Failed to connect to MySQL: " . mysqli_connect_error());

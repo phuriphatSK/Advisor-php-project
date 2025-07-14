@@ -6,7 +6,7 @@ $id = $_POST['id'];
 $year = $_POST['year'];
 $grade = $_POST['grade'];
 
-$sql = "UPDATE record SET r_year = '$year', r_grade = '$grade' WHERE c_id = '$id' AND s_id = '$username'" or die("Error:" . mysqli_error($con));
+$sql = "UPDATE record SET r_year = '$year', r_grade = '$grade' WHERE c_id = '$id' AND s_username = '$username'" or die("Error:" . mysqli_error($con));
 $result = mysqli_query($con, $sql);
 
 mysqli_close($con);

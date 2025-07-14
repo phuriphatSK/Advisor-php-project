@@ -1,7 +1,13 @@
 <meta charset="UTF-8">
 <?php
 require_once(__DIR__ . "../../../condb.php");
-$id = $_REQUEST["ID"];
+// ป้องกันการใช้โดยตรงหรือไม่มีค่า ID
+if (!isset($_GET["ID"])) {
+  echo "<script>alert('ไม่พบรหัสอาจารย์'); history.back();</script>";
+  exit;
+}
+
+$id = mysqli_real_escape_string($con, $_GET["ID"]); // ป้องกัน SQL Injection
 
 $sql = "DELETE FROM teacher WHERE t_id='$id' ";
 $result = mysqli_query($con, $sql) or die("Error in query: $sql " . mysqli_error($con));

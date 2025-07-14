@@ -7,45 +7,45 @@
     <title>Home</title>
     <link rel="stylesheet" href="../../styles.css">
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
 
-        .container {
-            display: flex;
-            justify-content: space-between;
+    .container {
+        display: flex;
+        justify-content: space-between;
 
-        }
+    }
 
-        .section {
-            width: 48%;
-            padding: 20px;
-        }
+    .section {
+        width: 48%;
+        padding: 20px;
+    }
 
-        .button-container {
-            text-align: center;
-            margin-top: 20px;
-        }
+    .button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
 
-        .button-container button {
-            margin: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-        }
+    .button-container button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
 
-        .btn {
-            background-color: #87CEEB;
-            color: black;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 40px;
-            text-decoration: none;
-            width: 400px;
-            height: 100px;
-            font-size: 15px;
-            font-weight: bold;
-        }
+    .btn {
+        background-color: #87CEEB;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 40px;
+        text-decoration: none;
+        width: 400px;
+        height: 100px;
+        font-size: 15px;
+        font-weight: bold;
+    }
     </style>
 </head>
 

@@ -3,40 +3,40 @@
 
 <head>
     <style>
-        .heading {
-            color: #000;
-            margin-left: 10px;
-            text-decoration: none;
-        }
+    .heading {
+        color: #000;
+        margin-left: 10px;
+        text-decoration: none;
+    }
     </style>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            background-color: #f8f9fa;
-        }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #f8f9fa;
+    }
 
-        .btn {
-            background-color: #87CEEB;
-            color: black;
-            border: none;
-            border-radius: 10px;
-            padding: 10px 30px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+    .btn {
+        background-color: #87CEEB;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }
 
-        .container {
-            color: black;
-            font-size: 30px;
-            text-align: center;
-            max-width: 600px;
-            margin: auto;
-            background-color: #fff;
-            padding: 60px;
-            border-radius: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+    .container {
+        color: black;
+        font-size: 30px;
+        text-align: center;
+        max-width: 600px;
+        margin: auto;
+        background-color: #fff;
+        padding: 60px;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
     </style>
 </head>
 
@@ -49,7 +49,7 @@
     session_start();
 
     if (!isset($_SESSION['username']) || $_SESSION['user_type'] !== 'student') {
-        header('Location: login.php');
+        header('Location: ../../../../login/index.php');
         exit();
     }
 
@@ -59,7 +59,7 @@
     $query = "SELECT s.s_id, s.s_name, s.s_surname, s.s_gender, s.s_course, s.t_id, t.t_name ,t.t_surname
           FROM student s 
           JOIN teacher t ON s.t_id = t.t_id 
-          WHERE s.s_id = '$username'";
+          WHERE s.s_username = '$username'";
     $result = mysqli_query($con, $query);
 
 

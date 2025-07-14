@@ -3,80 +3,80 @@
 
 <head>
     <style>
-    .heading {
-        color: #000;
-        margin-left: 10px;
-        text-decoration: none;
-    }
+        .heading {
+            color: #000;
+            margin-left: 10px;
+            text-decoration: none;
+        }
     </style>
     <style>
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #f8f9fa;
-    }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8f9fa;
+        }
 
-    .container {
-        text-align: center;
-        margin-top: 20px;
-        color: black;
-        font-size: 30px;
-        max-width: 700px;
-        margin: auto;
-        background-color: #fff;
-        padding: 60px;
-        border-radius: 20px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+            color: black;
+            font-size: 30px;
+            max-width: 700px;
+            margin: auto;
+            background-color: #fff;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-    .form-group {
-        margin: 10px;
-    }
+        .form-group {
+            margin: 10px;
+        }
 
-    .form-group label {
-        color: black;
-        font-size: 18px;
-    }
+        .form-group label {
+            color: black;
+            font-size: 18px;
+        }
 
-    .form-control {
-        background-color: #87CEEB;
-        border: none;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 16px;
-        width: 50%;
-        color: black;
-        margin: 20px;
-    }
+        .form-control {
+            background-color: #87CEEB;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 16px;
+            width: 50%;
+            color: black;
+            margin: 20px;
+        }
 
-    .form-control::placeholder {
-        color: black;
-    }
+        .form-control::placeholder {
+            color: black;
+        }
 
-    .btn {
-        background-color: #00FF66;
-        color: black;
-        border: none;
-        border-radius: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
+        .btn {
+            background-color: #00FF66;
+            color: black;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-    .btn-cancel {
-        background-color: #FF0000;
-        color: white;
-        margin-left: 10px;
-    }
+        .btn-cancel {
+            background-color: #FF0000;
+            color: white;
+            margin-left: 10px;
+        }
 
-    a {
-        text-decoration: none;
-    }
+        a {
+            text-decoration: none;
+        }
 
-    input[readonly] {
-        background-color: #f0f0f0;
-        color: #888;
-    }
+        input[readonly] {
+            background-color: #f0f0f0;
+            color: #888;
+        }
     </style>
 </head>
 

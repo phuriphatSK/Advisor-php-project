@@ -4,7 +4,7 @@ require_once(__DIR__ . '../../../../database/condb.php');
 $id = $_REQUEST["ID"];
 $username = $_SESSION['username'];
 
-$sql = "DELETE FROM record WHERE c_id='$id' AND s_id='$username' ";
+$sql = "DELETE FROM record WHERE c_id='$id' AND s_username='$username' ";
 $result = mysqli_query($con, $sql);
 
 if ($result) {
