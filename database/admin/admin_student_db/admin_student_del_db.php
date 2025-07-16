@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <?php
 require_once(__DIR__ . "../../../condb.php");
-$id = $_REQUEST["ID"];
+$id = $_GET["ID"];
 
 $sql = "DELETE FROM student WHERE s_id='$id' ";
 $result = mysqli_query($con, $sql) or die("Error in query: $sql " . mysqli_error($con));
